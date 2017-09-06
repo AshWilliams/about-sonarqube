@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>SonarQube</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <img src="img/sonarqube-logo-transparent.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    <h1><strong>Sonar</strong>Qube</h1>
+                    <h4><i>The battle against Technical Debt</i></h4>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3>What is <strong>Technical Debt</strong>?</h3>
+                        <p>(also known as <strong>design debt</strong> or <strong>code debt</strong>) is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer.</p>
+                        <br>
+                        <small style="text-align: right">Source: <a href="https://en.wikipedia.org/wiki/Technical_debt" target="_new">https://en.wikipedia.org/wiki/Technical_debt</a></small>
+                    </section>
+
+                    <section>
+                        <img src="img/code-review-measurement.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <img src="img/hadouken.jpg" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <img src="img/function_civil_war.jpg" alt=""  height="600px" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section>
+                        <video width="620" height="440" controls>
+                            <source src="img/when_you_fix_a_bug_in_production.mp4" type="video/mp4">
+                        </video>
+                    </section>
+
+                    <section>
+                        <img src="img/release_day.jpg" height="600px" alt="">
+                    </section>
+
+                    <section>
+                        <img src="img/when_i_fixed_the_bug_and_created_a_new_bug.png" height="600px" alt="">
+                    </section>
+
+                    <section>
+                        <img src="img/how_people_reacts_differently_to_a_single_word.jpg" height="600px" alt="">
+                    </section>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>What is <strong>SonarQube</strong></h3>
+                    <p>is an open source platform to perform automatic reviews with static analysis of code to detect bugs, code smells and security vulnerabilities on 20+ programming languages including Java, C#, JavaScript, C/C++, COBOL and more.</p>
+                    <br>
+                    <small style="text-align: right">Source: <a href="https://www.sonarqube.org/about/" target="_new">https://www.sonarqube.org/about/</a></small>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3><strong>SonarQube</strong> Features</h3>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3><strong>Continuous Inspection</strong></h3>
+                        <p>SonarQube provides the capability to not only show health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can fix the leak and therefore improve code quality systematically.</p>
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Overall health</strong></h4>
+                        <p>Your project home page shows where you stand in terms of quality in a glimpse of an eye. This main page also shows you an immediate sense of the good results achieved over time.</p>
+                        <img src="img/continuous_inspection/overall-health.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Focus on the Leak</strong></h4>
+                        <p>The water leak paradigm is a simple yet powerful way to manage code quality: quality of new - changed and added - code should be put under control before anything else.</p>
+                        <img src="img/continuous_inspection/leak.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Enforce Quality Gate</strong></h4>
+                        <p>With SonarQube, a developer has everything at hand to take ownership of the quality of his code. To fully enforce a code quality practice across all teams, you need to set up a Quality Gate.</p>
+                        <img src="img/continuous_inspection/enforce-quality-gate.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Analyze pull requests</strong></h4>
+                        <p>Once you have SonarQube in place, you will quickly want to make sure you add as few issues as possible to your code base.</p>
+                        <img src="img/continuous_inspection/pull-request-screen.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                     <section style="text-align: left;">
+                        <h4><strong>Dig into issues</strong></h4>
+                        <p>The "Issues" page of your project gives you full power to analyze in detail what the main issues are, where they are located, when they were added to your code base and who originally introduced them.</p>
+                        <img src="img/continuous_inspection/dig-into-issues.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Highlight hot spots</strong></h4>
+                        <p>SonarQube treats test coverage and duplications, two of the major software quality problems, as first class citizens. The "Measures" page lets you browse your project in different ways to highlight files that need your attention.</p>
+                        <img src="img/continuous_inspection/hot-spots.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3><strong>Detect Tricky Issues</strong></h3>
+                        <p>Code analyzers are equipped powerful path sensitive dataflow engines to detect tricky issues such as null-pointers dereferences, logic errors, resource leaks, etc...</p>
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Detect Bugs</strong></h4>
+                        <p>Issues raised by SonarQube are on either demonstrably wrong code, or code that is more likely not giving the intended behavior. Examples include null-pointer dereferences, memory leaks, and logic errors.</p>
+                        <img src="img/detect_tricky_issues/issues-tracking-bugs.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Code Smells</strong></h4>
+                        <p>"Smelly" code does (probably) what it should, but it will be difficult to maintain. In the worst cases, it will be so confusing that maintainers can inadvertently introduce bugs.</p>
+                        <img src="img/detect_tricky_issues/issues-tracking-code-smells.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Security Vulnerability</strong></h4>
+                        <p>It's probably Pollyanna-ish to think you’ll never be targeted by hackers. When you are, what vulnerabilities will they find in your system? SonarQube helps you find and track the insecurities in your code. Examples include SQL injection, hard-coded passwords and badly managed errors.</p>
+                        <img src="img/detect_tricky_issues/issues-tracking-vulnerabilities.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Activate The Rules You Need</strong></h4>
+                        <p>SonarQube code analyzers include default Quality Profiles that offer strong value with non-controversial rule sets. The default Quality Profiles will work for most projects, but you can easily tune them to fully match your needs.</p>
+                        <img src="img/detect_tricky_issues/activate-therules.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Explore All Execution Paths</strong></h4>
+                        <p>SonarQube relies on several path-sensitive dataflow engines and thus code analyzers explore all possible execution paths to spot the trickiest bugs. Even a simple function containing only 10 different branches might lead to 100 different possible execution paths at runtime.</p>
+                        <img src="img/detect_tricky_issues/explore-paths.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3><strong>20+ Programming Languages</strong></h3>
+                        <p>With SonarQube comes a code analyzer for each major programming language. Each analyzer provides numerous rules to spot general and language-specific quality issues.</p>
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Multi-Language Projects</strong></h4>
+                        <p>Applications often use several programming languages at once, for example [C#, C++ and JavaScript] or [Java, JavaScript and HTML]. SonarQube automatically detects these languages and invokes the corresponding analyzers.</p>
+                        <img src="img/multi_languages/multi-language.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Languages Consistency</strong></h4>
+                        <p>When switching from one language to another, the user experience remains consistent, with the same way to describe and tag rules, report issues, evaluate remediation effort…</p>
+                        <img src="img/multi_languages/languages-consistency.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3><strong>Centralize Quality</strong></h3>
+                        <p>One place to provide a shared vision of code quality for developers, tech leads, managers and executives in charge of a few to a few thousands projects and also to act as a toll gate for application promotion or release.</p>
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>All projects in one place</strong></h4>
+                        <p>When switching from one language to another, the user experience remains consistent, with the same way to describe and tag rules, report issues, evaluate remediation effort…</p>
+                        <img src="img/centralization/all-projects.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Shared rulesets</strong></h4>
+                        <p>SonarQube offers a central place to view and define the rules used during analysis of projects. These rulesets are organized in quality profiles. Every member of the organization can see which rules are applied to their project.</p>
+                        <img src="img/centralization/rule-sets.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Unified Quality Gate</strong></h4>
+                        <p>SonarQube provides out-of-the-box a default Quality Gate focusing on the Leak concept. This means that the same requirements will be applied across the board to every project - greenfield and legacy; in-house, out-source and off-shore.</p>
+                        <img src="img/centralization/quality-gate.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Cross projects services</strong></h4>
+                        <p>Most services are available cross projects. For example, as a developer you can use the issues service to get all new issues assigned to you - across projects - so that you can concentrate on your work.</p>
+                        <img src="img/centralization/cross-projects-services.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Risk-based views</strong></h4>
+                        <p>Executives will use aggregated dashboards which come as part of the Governance product not only to get the big picture about quality of projects but also to assess their risk: Reliability, Security, and Maintainability; as well as the overall Releasability (Quality Gate adherence).</p>
+                        <img src="img/centralization/risk-based-views.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <section style="text-align: left;">
+                        <h3><strong>DevOps Integration</strong></h3>
+                        <p>SonarQube integrates with the entire DevOps toolchain including build systems, CI engines, promotion pipelines... using webhooks and its comprehensive RestAPI.</p>
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Build Systems</strong></h4>
+                        <p>For dynamic languages like JavaScript, PHP, Python, … executing an analysis is as easy as feeding SonarQube with a bunch of source files.</p>
+                        <img src="img/integration/build-systems.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>CI Engines</strong></h4>
+                        <p>Native integrations with build systems let you easily schedule the execution of an analysis from all CI engines: Jenkins, VSTS, TFS, Travis-CI… Don’t worry if your CI engine isn’t listed here, integration effort will be minimum.</p>
+                        <img src="img/integration/ci-engines.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Pass/Fail Notification</strong></h4>
+                        <p>Once an analysis is done, a report is sent to the SonarQube server to be integrated. At the end of this integration, a standard webhook mechanism lets you notify any external system to do whatever you want: trigger an alarm, update a wallboard, notify a chat room.</p>
+                        <img src="img/integration/notifications-quality-gate.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Full Web API</strong></h4>
+                        <p>As part of the overall development ecosystem, the SonarQube Web API can be used to automatically provision a SonarQube project, feed a BI tool, monitor SonarQube, etc. Morever the list and definition of all the Web API is built in SonarQube.</p>
+                        <img src="img/integration/full-web-api.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+
+                    <section style="text-align: left;">
+                        <h4><strong>Promotion Pipelines</strong></h4>
+                        <p>Using webhooks, SonarQube can be integrated as a promotion step in your delivery pipelines. This way, you can make sure that only artifacts that pass the Quality Gate will be released and deployed to production.</p>
+                        <img src="img/integration/quality-gate.png" alt="" style="background: none; box-shadow: none; border: none;">
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Demo</h1>
+                </section>
+
+                <section>
+                    <h1>Q & A</h1>
+                </section>
+
+                <section>
+                    <h1>End</h1>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
